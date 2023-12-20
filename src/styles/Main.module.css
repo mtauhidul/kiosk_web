@@ -1,0 +1,29 @@
+.mainContainer {
+    background-color: var(--bg) !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    background: #F3F3FC !important;
+    box-shadow: none !important;
+}
+
+.body {
+    background-color: transparent !important;
+    min-height: 85vh;
+}
+
+.sidebar {
+    border-right: none !important;
+}
+
+.listItem {
+    margin-top: 10px !important;
+}
+
+.drawerLogo {
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+.documentsContainer {
+  width: 100%;
+  min-height: 85vh;
+  position: relative;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 502px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .documentsContainer {
+    min-height: 100vh;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .documentsContainer {
+    padding-top: 10px;
+    min-height: 100vh;
+    padding-bottom: 100px;
+  }
+}
