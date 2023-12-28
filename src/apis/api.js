@@ -8,9 +8,16 @@ import {
 import { db } from './firebase';
 
 export const addPatient = async (patient, id) => {
-  // console.log(patient, id);
+  const now = new Date();
+  const isoString = now.toISOString();
   const data = {
     patient: patient,
+    timestamp: isoString,
+    activity_time: {
+      doctor: 0,
+      patient: 0,
+      staff: 0,
+    },
     others: {
       appointment_date: {
         value: new Date().toLocaleDateString(),
